@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "authivate"
+version = "0.1.0"
+description = ""
+    authors = ["Peter Akande <akandepeter86@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+requests-mock = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
