@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     def signup_user(authivate: Authivate):
         # Sign up a user
-        sign_up_response = authivate_instance.sign_up_user(
+        sign_up_response = authivate.sign_up_user(
             email_address="user@example.com",
             last_name="Doe",
             first_name="John",
@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
     def signin_user(authivate: Authivate):
         # Signs In a User
-        sign_in_response = authivate_instance.sign_in_user(
+        sign_in_response = authivate.sign_in_user(
             email_address="user@example.com",
             password="password"
         )
@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     def request_confirm_account_email(authivate: Authivate):
         # Request OTP for a user
-        request_otp_response = authivate_instance.request_otp_for_user(
+        request_otp_response = authivate.request_otp_for_user(
             email_address="user@example.com"
         )
         if request_otp_response.was_successful:
@@ -115,7 +115,7 @@ if __name__ == "__main__":
 
     def request_forgot_password_email(authivate: Authivate):
         # Example: Request a forgot password email for a user
-        forgot_password_response = authivate_instance.request_forgot_password_for_user(
+        forgot_password_response = authivate.request_forgot_password_for_user(
             email_address="user@example.com"
         )
         if forgot_password_response.was_successful:
